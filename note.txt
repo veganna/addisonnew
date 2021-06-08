@@ -2,5 +2,9 @@ user = admin
 password = 123
 
 it`s possible to add pictures by the admin page.
+it`s possible to change the home page design by the admin page
+it`s possible to see the contacts that was sended by the let`s be friends
+some bug fixes
+and it a bit more fast now
 
 i hope you like it
