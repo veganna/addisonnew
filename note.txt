@@ -1,0 +1,6 @@
+user = admin
+password = 123
+
+it`s possible to add pictures by the admin page.
+
+i hope you like it

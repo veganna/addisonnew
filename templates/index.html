@@ -1,0 +1,419 @@
+{% load static %}
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="The Love Sprockets">
+<meta name="author" content="Horizon Development">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>The Love Sprockets</title>
+
+<!-- STYLES -->
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/plugins.css'%}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/colors.css'%}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}" />
+<link rel="stylesheet" type="text/css" href="{% static 'css/side_contact.css'%}" />
+<!--[if lt IE 9]> <script type="text/javascript" src="js/modernizr.custom.js"></script> <![endif]-->
+<!-- /STYLES -->
+
+</head>
+
+<body> 
+	
+	<!-- PRELOADER -->
+	<div id="preloader">
+		<div class="loader_line"></div>
+	</div>
+	<!-- /PRELOADER -->
+	
+<!-- WRAPPER ALL -->
+<div class="shane_tm_all_wrap" data-magic-cursor="" data-color="black">
+
+	<!-- MAGIC CURSOR VALUES: "", hide -->
+	<!-- COLOR VALUES: blue, green, brown, pink, orange, black, white, purple, sky, cadetBlue, crimson, olive, red -->
+	
+	
+	<!-- MOBILE MENU -->
+	<div class="shane_tm_mobile_menu" style="position: fixed;">
+		<div class="topbar_inner">
+			<div class="container bigger">
+				<div class="topbar_in">
+					<div class="logo">
+						<img src="{% static 'img/logo/new/darknew.png'%}" alt="" />
+					</div>
+					<div class="my_trigger">
+						<div class="hamburger hamburger--collapse-r">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="dropdown">
+			<div class="container">
+				<div class="dropdown_inner">
+					<ul class="anchor_nav">
+						<li class="current"><a href="#home">Home</a></li>
+						<li><a href="#bio">Bio</a></li>
+						<li><a href="#music">Music</a></li>
+						<li><a href="#skoolie">Skoolie</a></li>
+						<li><a href="#picture">Pictures</a></li>
+						<li><a href="#videos">Videos</a></li>
+						<li><a target="_blank" href="https://thelovesprockets.bandcamp.com/">Shop</a></li>
+						<li><a target="_blank" href="https://us7.list-manage.com/contact-form?u=76a395e9a3802641c6491995a&form_id=ab766174693b088a6f339b125c095943">Contact</a></li>
+						<li><a href="#getin">Upcoming Shows</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /MOBILE MENU -->
+	
+	<!-- TOPBAR -->
+	<div class="shane_tm_topbar">
+		<div class="topbar_inner">
+			<div class="logo">
+				<img  style="height:35px;" src="{% static 'img/logo/new/darknew.png'%}" alt="" />
+			</div>
+			<div class="menu">
+				<ul class="anchor_nav">
+					<li class="current"><a href="#home">Home</a></li>
+					<li><a href="#bio">Bio</a></li>
+					<li><a href="#music">Music</a></li>
+					<li><a href="#skoolie">Skoolie</a></li>
+					<li><a href="#picture">Pictures</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a target="_blank" href="https://thelovesprockets.bandcamp.com/">Shop</a></li>
+					<li><a target="_blank" href="https://us7.list-manage.com/contact-form?u=76a395e9a3802641c6491995a&form_id=ab766174693b088a6f339b125c095943">Contact</a></li>
+					<li><a href="#getin">Upcoming Shows</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- /TOPBAR -->
+	
+	<!-- SIDE_CONTACT -->
+	<div class="sidebar-contact">
+		<div class="toggle"></div>
+		<h2>LET'S BE FRIENDS!</h2>
+		<form method="post">
+			{% csrf_token %}
+			<input type="text" name="name" placeholder="Name">
+			<input type="email" name="email" placeholder="Email">
+			<input type="submit" value="Submit">
+		</form>
+	
+	</div>
+	<!-- /SIDE_CONTACT -->
+	
+	<!-- HERO -->
+	<div class="shane_tm_hero" id="home" data-style="{{ homestyle }}"> <!-- data-style values: one,two,three >> Empty is SQUARE shape -->
+		<div class="background">
+			<div class="image" data-img-url="{% static 'img/slider/slide-1.jpeg'%}"></div>
+		</div>
+		<div class="container">
+			<div class="content">
+				<div class="name_wrap"><h3><span>The Love</span> Sprockets<span class="overlay_effect"></span></h3></div>
+				<div class="job_wrap"><span class="job">Mojo Folks<span class="overlay_effect"></span></span></div>
+			</div>
+			<div class="shane_tm_down" data-skin="dark"> 
+				<div class="line_wrapper">
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /HERO -->
+	
+	<!-- BIO -->
+	<div class="shane_tm_section" id="bio" style="background-color:#f9f9f9;">
+		<div class="shane_tm_about">
+			<div class="container">
+				<div class="about_inner">
+					<div class="left">
+						<div class="image">
+							<img src="{% static 'img/placeholders/1-1.jpg'%}" alt="" />
+							<div class="main" data-img-url="{% static 'img/about/bio.jpg'%}"></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="shane_tm_title">
+							<span>Biography</span>
+							<h3>Husband-Wife Duet</h3>
+						</div>
+						<div class="text">
+							<p>Drawing from the growling blues-rock of Tom Waits, the high-octane punk-grass of The Devil Makes Three, and the intricate vocal harmonies of The Civil Wars...
+								Husband-Wife duet The Love Sprockets have a sound that “resists classification,” according to Austin Weekly Horn.
+								Songwriter/Multi-Instrumentalists Addison Rice and Jahnavi Newsom met and fell in love in the fall of 2012, and immediately began writing and performing music together.
+								The following summer, the pair released a 10-track demo entitled Stories & Lies, featuring a mix of original songs and high-energy adaptations of traditional folk tunes...
+								Before embarking on a 4-month-long, 2500 mile bicycle trip from their hometown of Brattleboro, Vermont all the way to Austin, Texas.
+								They arrived in Austin in the dead of winter 2014 with their bicycles, their instruments, and their dog, Zoso. (who they pulled behind their bicycles in a carrier the entire way :-)
+								Over the next year, Addison and Jahnavi recruited upright bass-player Aaron Watson, and percussionist/vocalist Pete Van Dyck and in spring 2015, The Love Sprockets crowdfunded, recorded, and released their first studio album: Nobody Wants To Die.
+								Jahnavi and Addison moved to Fort Collins CO, where they recorded their 2019 ablum, Chickadee, and bought a 1990 Bluebird prison bus to convert into a full-time tour bus/tiny home on wheels.
+								In June 2019 they brought their skoolie to Driggs Idaho to finish the conversion and play shows locally.
+								Now you can find them on Marrowstone Island in Washington living in their school bus house with their dog and cat, playing livestreams during the pandemic and dreaming of their next tour...
+								And though their sound continues to evolve (as they incorporate new instruments and one-man-band-style foot percussion into their arrangements)... 
+								The music of The Love Sprockets will always be connected by a common thread:
+								The Soulful and Lyrical Exploration of The Human Experience.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<!-- /BIO -->
+	
+	
+	
+	<!-- MUSIC -->
+	<div class="shane_tm_section" id="music">
+		<div class="shane_tm_about">
+			<div class="container">
+				<div class="about_inner">
+					<div class="left">
+						<div class="image">
+							<img src="{% static 'img/placeholders/1-1.jpg'%}" alt="" />
+							<div class="main" data-img-url="{% static 'img/music/nwd.jpeg'%}"></div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="shane_tm_title">
+							<h3 style="margin-bottom:15px;">NOBODY WANTS TO DIE</h3>
+							<span>released April 24, 2015</span>
+						</div>
+						<div class="text">
+							<p>Our first studio album, written on our 2013 four-month cross country bicycle trip, and recorded in Austin, Texas in late 2014.</p>
+						</div>
+						<div class="shane_tm_button">
+							<a  target="_blank" href="https://thelovesprockets.fanlink.to/nobody-wants-to-die">LISTEN TO NOBODY WANTS TO DIE</a>
+						</div>
+					</div>
+				</div>
+				<div class="about_inner" style="margin-top:30px;">
+					<div class="right">
+						<div class="shane_tm_title">
+							<h3 style="margin-bottom:15px;">Chickadee</h3>
+							<span>released March 3, 2019</span>
+						</div>
+						<div class="text">
+							<p>On November 16th, 2016, our daughter Chickadee was stillborn after nine months of healthy pregnancy. Her feet never touched the ground.
+								<br>The tears we shed yesterday have become life-giving rain, and these songs are the flowers that have bloomed from the depths of our grief. We offer this bouquet of flowers to Chickadee and to you. For those of you who are grieving the loss of a loved one, know that you are not alone.</p>
+						</div>
+						<div class="shane_tm_button">
+							<a target="_blank" href="https://thelovesprockets.fanlink.to/chickadee">LISTEN TO CHICKADEE</a>
+						</div>
+					</div>					
+					<div class="left" style="margin-top:30px;">
+						<div class="image">
+							<img src="{% static 'img/placeholders/1-1.jpg'%}" alt="" />
+							<div class="main" data-img-url="{% static 'img/music/chickadee.jpeg'%}"></div>
+						</div>
+					</div>					
+				</div>
+			</div>		
+		</div>
+	</div>
+	
+	<!-- /MUSIC -->
+	
+	<!-- PICTURES -->
+	<div class="shane_tm_section" id="picture">
+		<div class="shane_tm_portfolio">
+			<div class="container">
+				<div class="shane_tm_title">
+					<div class="title_flex">
+						<div class="left">
+							<span>Pictures</span>
+							<h3>Creative Pictures</h3>
+						</div>
+						<div class="portfolio_filter">
+							<ul>
+								<li><a href="#" class="current" data-filter="*">All</a></li>
+								{% for p_category in categories %}
+								{% block category %} 
+								<li><a  style="text-transform: capitalize;" href="#" data-filter=".{{p_category.p_category}}">{{p_category.p_category}}</a></li>
+								{% endblock category %}
+								{% endfor %}
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="shane_tm_portfolio_titles"></div>
+				<div class="portfolio_list">
+					<ul class="gallery_zoom">
+						{% for title in pictures %}
+						{% block picture %}
+						<li class="{{title.category}}">
+							<div class="inner">
+								<div class="entry shane_tm_portfolio_animation_wrap" data-title="{{title.title}}" data-category="{{title.category}}">
+									<a class="zoom" href="{{title.image.url}}">
+										<img src="{% static 'img/placeholders/1-1.jpg'%}" alt="" />
+										<div class="main" data-img-url="{{title.image.url}}"></div>
+									</a>
+								</div>
+								<div class="mobile_title">
+									<h3 style="text-transform: capitalize;" >{{title.title}}</h3>
+									<span style="text-transform: capitalize;" >{{title.category}}</span>
+								</div>
+							</div>
+						</li>
+						{% endblock picture %}
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /PICTURES -->
+	
+	<!-- VIDEO -->
+	<div class="shane_tm_section" id="videos">
+		<div class="shane_tm_business_video">
+			<div class="bg">
+				<div class="image jarallax" data-speed="0" data-img-url="{% static 'img/slider/slide-2.jpeg'%}"></div>
+				<div class="overlay"></div>
+			</div>
+			<div class="content">
+				<span class="rounded"><a class="popup-youtube" href="https://youtu.be/yobNnm7HJlM"></a></span>
+				<h3 class="text">The Love Sprockets - Videos</h3>
+				<div class="shane_tm_video_button">
+					<a target="_blank" href="https://youtu.be/yobNnm7HJlM">Watch Video</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="shane_tm_section">
+		<div class="shane_tm_partners">
+			<div class="container">
+				<div class="partners_inner">
+					<ul class="owl-carousel">
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=-5UcA6tFlx8&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=9"><img src="{% static 'img/videos/video1.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=-5UcA6tFlx8&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=1"><img src="{% static 'img/videos/video2.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=HS8d0Kls1dM&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=2"><img src="{% static 'img/videos/video3.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=bpLX3d2ToLo&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=3"><img src="{% static 'img/videos/video4.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=E5PqSd1InB0&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=4"><img src="{% static 'img/videos/video5.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=ZTSxg0OsD6M&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=5"><img src="{% static 'img/videos/video6.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=VhvsBqDLqGs&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=6"><img src="{% static 'img/videos/video7.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=Jej-TDAV1LU&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=7"><img src="{% static 'img/videos/video8.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=ZTSxg0OsD6M&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=8"><img src="{% static 'img/videos/video9.webp'%}" alt="" /></a></li>
+						<li class="item"><a  target="_blank" href="https://www.youtube.com/watch?v=-5UcA6tFlx8&list=PLMGkYK-Ji_TrlZ8emOKZVQbtewdd_HnGh&index=10"><img src="{% static 'img/videos/video10.webp'%}" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /VIDEO -->
+	
+	<!-- SKOOLIE -->
+	<div class="shane_tm_section" id="skoolie">
+		<div class="shane_tm_testimonials">
+			<div class="container">
+				<div class="testimonials_inner">
+					<div class="left">
+						<div class="shane_tm_title">
+							<span>Skoolie</span>
+							<h3>TLS Skoolie Blurb</h3>
+							<iframe width="560" height="315" src="https://www.youtube.com/embed/pwcnRqEvwRs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<div class="text">
+								<p>We used to go on tour every
+									year in our Subaru Impreza,
+									with our dog Zoso perched atop amps and
+									instrument cases in the back.
+									We would always have to
+									find someone to sublet
+									our place while we were on the road,
+									to help lower our overhead and to
+									keep our cat, Shiva, company
+								</p>
+							</div>						
+						</div>
+					</div>
+					<div class="right">
+							<div class="text">
+								<p>After months on the road we would find ourselves feeling sleep deprived from crashing
+									on couches or sleeping in hotels (or in seven year old girl’s beds amidst teddy
+									bears and glittery pillows)…
+									…and our health would be compromised from weeks of junk food and eating out,
+									not to mention feeling stiff and flabby from hours and hours of sitting.
+									In the year 2017, after losing our daughter, we began to rethink our lives completely.
+									A dream took form in our minds’ eyes, and we began to discuss an alternative way of living…
+									What if we could take our pets on tour with us? What if we always had our comfy,
+									king sized bed to sleep in every night?
+									What if we could cook for ourselves and maintain a healthy diet while touring?
+									And how about being able to bring ALL of our instruments and musical equipment with us,
+									instead of having to pick and choose what would fit in the back of our car? Oh, and could
+									we also bring kettle bells and have space to roll out a yoga mat and stretch whenever we needed to?
+									Skoolie bus homes started to look REAL appealing to us…
+								</p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /SKOOLIE -->
+	<!-- CONTACT -->
+	<div class="shane_tm_section" id="getin">
+		<div class="shane_tm_talk">
+			<div class="shape">
+				<img class="svg" src="{% static 'img/svg/paper.svg'%}" alt="" />
+			</div>
+			<div class="background" id="talk">
+				<a class="player" data-property="{videoURL:'https://youtu.be/bpLX3d2ToLo',containment:'#talk',autoPlay:true, loop:true, showControls:false, mute:true, startAt:0,opacity:1, quality:'default'}"></a>
+				<div class="overlay"></div>
+			</div>
+			<div class="talk_inner" style="text-align:center;">
+			</div>
+		</div>
+	</div>
+	<!-- /CONTACT -->
+	<!-- COPYRIGHT -->
+	<div class="shane_tm_section">
+		<div class="shane_tm_copyright">
+			<div class="container">
+				<div class="inner">
+					<div class="container-fluid">
+					<a href="https://www.songkick.com/artists/8338218" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="true" data-background-color="transparent" data-locale="en">Upcoming Shows</a>
+					<p>&copy; 2021 The Love Sprockets. All rights reserved.</p>
+					</div> 
+					<a target="_blank" href="https://l.instagram.com/?u=http%3A%2F%2Ffacebook.com%2Fgroups%2Fmojofolks%2F%2F&e=ATM6cyiitKfvFBQXSRStriUQ-76OcIqJXKcvvNyWOxawB05bic4QW-2k9FYXRrM7zgsGvEslvPaIKH1rDQeR_ro&s=1"><img class="svg" src="{% static 'img/svg/social/facebook.svg'%}"></a>
+					<a target="_blank" href="https://www.instagram.com/thelovesprockets/"><img class="svg" src="{% static 'img/svg/social/instagram.svg'%}"></a>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<!-- /COPYRIGHT -->
+	
+	<!-- CURSOR -->
+
+	<!-- /CURSOR -->
+	
+</div>
+<!-- / WRAPPER ALL -->
+	
+<!-- SCRIPTS -->
+<script src="{% static 'js/jquery.js'%}"></script>
+<!--[if lt IE 10]> <script type="text/javascript" src="js/ie8.js"></script> <![endif]-->	
+<script src="{% static 'js/plugins.js'%}"></script>
+<script src="{% static 'js/init.js'%}"></script>
+<script src="{% static 'js/widget.js' %}"></script>
+<script src="{% static 'js/side_contact.js' %}"></script>
+<!-- /SCRIPTS -->
+
+</body>
+</html>
